@@ -25,7 +25,7 @@
     "software-engineering",
     "programming"
   ],
-  "author": "Your Name",
+  "author": "Nam Dang",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.0",
@@ -41,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/design-patterns-typescript"
+    "url": "https://github.com/namdq2/typescrypt-design-patterns.git"
   }
 }
