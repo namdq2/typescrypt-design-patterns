@@ -12,16 +12,65 @@ The Singleton pattern ensures that a class has only one instance and provides a 
 
 ## Structure
 
+### UML Class Diagram
+
+```mermaid
+classDiagram
+    class Singleton {
+        -instance: Singleton
+        -isCreating: boolean
+        +name: string
+        +category: string
+        +description: string
+        -constructor()
+        +getInstance(): Singleton
+        +reset(): void
+        +doSomething(): string
+    }
+    
+    note for Singleton "Private constructor prevents\ndirect instantiation"
+    
+    class LazySingleton {
+        -_instance: LazySingleton
+        -data: string
+        -constructor()
+        +instance: LazySingleton
+        +getData(): string
+        +reset(): void
+    }
+    
+    class SingletonRegistry {
+        -instances: Map~string, any~
+        +getInstance~T~(key: string, factory: Function): T
+        +reset(key: string): void
+        +resetAll(): void
+        +hasInstance(key: string): boolean
+    }
+    
+    Singleton --|> Pattern : implements
+    LazySingleton --|> Pattern : implements
 ```
-┌─────────────────────┐
-│      Singleton      │
-├─────────────────────┤
-│ - instance: Self    │
-│ - constructor()     │
-├─────────────────────┤
-│ + getInstance(): Self│
-│ + operation()       │
-└─────────────────────┘
+
+### Sequence Diagram
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Singleton
+    
+    Client->>Singleton: getInstance()
+    alt Instance doesn't exist
+        Singleton->>Singleton: create new instance
+        Singleton->>Singleton: store instance
+    end
+    Singleton-->>Client: return instance
+    
+    Client->>Singleton: getInstance()
+    Note over Singleton: Instance already exists
+    Singleton-->>Client: return same instance
+    
+    Client->>Singleton: doSomething()
+    Singleton-->>Client: "Singleton instance is working!"
 ```
 
 ## Implementation
