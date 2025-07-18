@@ -26,6 +26,11 @@ Each pattern includes:
 
 ## 🏗️ Design Patterns
 
+### Status Legend
+- ✅ **Complete** - Full implementation with tests, examples, and documentation
+- 🔄 **In Progress** - Basic implementation, needs tests/examples
+- ⏳ **Planned** - Not yet implemented
+
 ### Creational Patterns (5)
 These patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
 
@@ -33,9 +38,9 @@ These patterns deal with object creation mechanisms, trying to create objects in
 |---------|-------------|--------|
 | [Abstract Factory](./src/creational/abstract-factory/) | Creates families of related objects | ⏳ |
 | [Builder](./src/creational/builder/) | Constructs complex objects step by step | ⏳ |
-| [Factory Method](./src/creational/factory-method/) | Creates objects without specifying exact classes | ⏳ |
+| [Factory Method](./src/creational/factory-method/) | Creates objects without specifying exact classes | 🔄 |
 | [Prototype](./src/creational/prototype/) | Creates objects by cloning existing instances | ⏳ |
-| [Singleton](./src/creational/singleton/) | Ensures only one instance of a class exists | ⏳ |
+| [Singleton](./src/creational/singleton/) | Ensures only one instance of a class exists | ✅ |
 
 ### Structural Patterns (7)
 These patterns deal with object composition, creating relationships between objects to form larger structures.
@@ -76,8 +81,8 @@ These patterns are concerned with algorithms and the assignment of responsibilit
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/design-patterns-typescript.git
-cd design-patterns-typescript
+git clone https://github.com/namdq2/typescrypt-design-patterns.git
+cd typescrypt-design-patterns
 
 # Install dependencies
 npm install
