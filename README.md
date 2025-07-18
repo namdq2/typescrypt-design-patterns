@@ -6,12 +6,38 @@ A comprehensive TypeScript implementation of all 23 Gang of Four (GoF) design pa
 
 - [Overview](#overview)
 - [Design Patterns](#design-patterns)
-  - [Creational Patterns](#creational-patterns)
-  - [Structural Patterns](#structural-patterns)
-  - [Behavioral Patterns](#behavioral-patterns)
+  - [Creational Patterns](#creational-patterns-5)
+    - [Singleton](./src/creational/singleton/README.md) ✅
+    - [Factory Method](./src/creational/factory-method/) 🔄
+    - [Abstract Factory](./src/creational/abstract-factory/) ⏳
+    - [Builder](./src/creational/builder/) ⏳
+    - [Prototype](./src/creational/prototype/) ⏳
+  - [Structural Patterns](#structural-patterns-7)
+    - [Adapter](./src/structural/adapter/) ⏳
+    - [Bridge](./src/structural/bridge/) ⏳
+    - [Composite](./src/structural/composite/) ⏳
+    - [Decorator](./src/structural/decorator/) ⏳
+    - [Facade](./src/structural/facade/) ⏳
+    - [Flyweight](./src/structural/flyweight/) ⏳
+    - [Proxy](./src/structural/proxy/) ⏳
+  - [Behavioral Patterns](#behavioral-patterns-11)
+    - [Chain of Responsibility](./src/behavioral/chain-of-responsibility/) ⏳
+    - [Command](./src/behavioral/command/) ⏳
+    - [Interpreter](./src/behavioral/interpreter/) ⏳
+    - [Iterator](./src/behavioral/iterator/) ⏳
+    - [Mediator](./src/behavioral/mediator/) ⏳
+    - [Memento](./src/behavioral/memento/) ⏳
+    - [Observer](./src/behavioral/observer/) ⏳
+    - [State](./src/behavioral/state/) ⏳
+    - [Strategy](./src/behavioral/strategy/) ⏳
+    - [Template Method](./src/behavioral/template-method/) ⏳
+    - [Visitor](./src/behavioral/visitor/) ⏳
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
+- [Learning Path](#learning-path)
 - [Contributing](#contributing)
+- [Resources](#resources)
+- [License](#license)
 
 ## 🎯 Overview
 
